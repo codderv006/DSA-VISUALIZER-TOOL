@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+      
+		
+		<title>
+			Queue Visualization
+		</title>
+		
+		<!-- css sheet for how the page is laid out -->
+		
+		<link rel="stylesheet" href="queue.css">
+				
+		<!-- Javascript for the actual visualization code -->
+		<script type = "text/javascript" src = "AnimationLibrary/CustomEvents.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/UndoFunctions.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/AnimatedObject.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/AnimatedLabel.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/AnimatedCircle.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/AnimatedRectangle.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/AnimatedLinkedList.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/HighlightCircle.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/Line.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/ObjectManager.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/AnimationMain.js"> </script>
+
+		<script type = "text/javascript" src = "AlgorithmLibrary/Algorithm.js"> </script>
+		<script type = "text/javascript" src = "AlgorithmLibrary/QueueArray.js"> </script> 
+        <script src="https://cdn.tailwindcss.com"></script>		
+			
+	 </head> 
+	
+	<body onload="init();" class="VisualizationMainPage">
+        <div>
+               <header class="px-10 py-9 flex bg-slate-800 justify-center text-5xl text-white">
+                Queue Implementaion Using Array
+            </header>
+            <nav class="bg-gradient-to-r from-gray-500 to-gray-800 flex justify-center">
+                <ul class="px-10 py-5 flex space-x-9 text-white justify-end">
+                    <a href="index.html" class="cursor-pointern hover:font-bold subpixel-antialiased">Home</a>
+                    <a href="" target="_blank" class="cursor-pointern hover:font-bold subpixel-antialiased">About</a>
+                    <a href="" target="_blank" class="cursor-pointern hover:font-bold subpixel-antialiased">Reviews</a>
+                    <a href="feedback.html" target="_blank" class="cursor-pointern hover:font-bold subpixel-antialiased">Feedback</a>
+                </ul>
+            </nav>
+        </div>
+		
+		<div id = "container">
+			
+			<!-- <div id="header">  
+				<h1>Queue Implementaion Using Array</h1>
+			</div> -->
+         
+			
+			<div id = "mainContent"> 
+				
+				<div id = "algoControlSection">
+					<table id="AlgorithmSpecificControls"> </table> 
+				</div>
+				<canvas id="canvas" width="1000" height="680"></canvas>
+				
+				<div id = "generalAnimationControlSection">
+			    <table id="GeneralAnimationControls">  </table>		
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

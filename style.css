@@ -1,0 +1,12 @@
+.swiper{
+    width: 950px;
+}
+
+.container2{
+    position: relative;
+    height: 450px;
+    width: 1075px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
