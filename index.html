@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSA-VISUALIZER</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header class="px-10 py-9 flex bg-slate-800 justify-center text-5xl text-white">
         Data Structure Algorithm Visualizer
     </header>
-    <nav class="bg-gradient-to-r from-gray-500 to-gray-800 flex justify-center text-2xl">
+    <nav class="bg-gray-800 flex justify-center text-2xl">
         <ul class="px-10 py-9 flex space-x-9 text-white justify-end">
             <a href="index.html" class="cursor-pointern hover:font-bold subpixel-antialiased">Home</a>
             <a href="" target="_blank" class="cursor-pointern hover:font-bold subpixel-antialiased">About</a>
             <a href="" target="_blank" class="cursor-pointern hover:font-bold subpixel-antialiased">Reviews</a>
-            <a href="feedback.html" target="_blank" class="cursor-pointern hover:font-bold subpixel-antialiased">Feedback</a>
+            <a href="feedback.html" target="_blank"
+                class="cursor-pointern hover:font-bold subpixel-antialiased">Feedback</a>
         </ul>
     </nav>
     <style>
-    .dropdown-menu:hover{
-        background: #6c757d;
-    }
+        body,
+        html {
+            height: 100%;
+        }
+
+        .dropdown-menu:hover {
+            background: #6c757d;
+        }
+
+        .dropdown-menu {
+            max-width: 2400px;
+            margin: auto;
+        }
+
+        body {
+    /* Image Location */
+    background-image: url("background7.png");
+ 
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+        }
+        
     </style>
-
     <div class="dropdown show">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 2000px; height: 200px; padding-top: 70px; font-size: x-large; text-align: center;">Select Data Structure</a>
+        <a class="btn btn-secondary dropdown-toggle px-10 py-9 flex bg-slate-800 justify-center text-5xl text-white font-size: x-large;"
+            href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Select Data Structure</a>
 
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="color: black; width: 2000px; text-align: center; font-size: large;">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+            style="color: black; width: 2100px; text-align: center; font-size: x-large;">
             <a class="dropdown-item">STACK</a>
             <a class="dropdown-item" href="queue.html">QUEUE</a>
             <a class="dropdown-item">LINKED LIST</a>
@@ -40,6 +74,8 @@
             <a class="dropdown-item">GRAPHS</a>
             <a class="dropdown-item" href="sorting.html">SORTING</a>
         </div>
-      </div>
+    </div>
+    <div class="bg"></div>
 </body>
+
 </html>
