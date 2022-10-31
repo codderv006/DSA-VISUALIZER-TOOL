@@ -6,6 +6,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="px-10 py-9 flex bg-slate-800 justify-center text-5xl text-white">
@@ -19,18 +23,23 @@
             <a href="feedback.html" target="_blank" class="cursor-pointern hover:font-bold subpixel-antialiased">Feedback</a>
         </ul>
     </nav>
+    <style>
+    .dropdown-menu:hover{
+        background: #6c757d;
+    }
+    </style>
 
-    <select onchange="location = this.value;">
-        <option value="select">Select Data structure</option>
-        <option value="stack">STACK</option>
-        <option value="queue.html">QUEUE</option>
-        <option value="linked">LINKED LIST</option>
-        <option value="trees">TREES</option>
-        <option value="graphs">GRAPHS</option>
-        <option value="sorting.html">Sorting</option>
-        </select>
+    <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 2000px; height: 200px; padding-top: 70px; font-size: x-large;">Select Data Structure</a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="color: black; width: 2000px; text-align: center; font-size: large;">
+            <a class="dropdown-item">STACK</a>
+            <a class="dropdown-item" href="queue.html">QUEUE</a>
+            <a class="dropdown-item">LINKED LIST</a>
+            <a class="dropdown-item">TREES</a>
+            <a class="dropdown-item">GRAPHS</a>
+            <a class="dropdown-item" href="sorting.html">SORTING</a>
+        </div>
+      </div>
 </body>
 </html>
-
-
-
