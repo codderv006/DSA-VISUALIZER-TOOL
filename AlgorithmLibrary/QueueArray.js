@@ -24,7 +24,7 @@ var QUEUE_ELEMENT_Y = 30;
 
 var INDEX_COLOR = "#0000FF"
 
-var SIZE = 15;
+var SIZE = 30;
 
 function QueueArray(am, w, h)
 {
