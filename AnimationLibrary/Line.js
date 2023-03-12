@@ -7,8 +7,8 @@ var LINE_highlightDiff = 3;
 	
 function Line(n1, n2, color, cv, d, weight, anchorIndex)
 {
-	this.arrowHeight = 8;
-	this. arrowWidth = 4;
+	this.arrowHeight = 10;
+	this. arrowWidth = 5;
 
 	this.Node1 = n1;
 	this.Node2 = n2;

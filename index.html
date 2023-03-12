@@ -18,18 +18,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="new.css">
 </head>
 
 <body>
-    <header class="px-10 py-9 flex bg-slate-800 justify-center text-5xl text-white">
+    <header class="px-10 py-6 flex bg-white  justify-center text-5xl text-black">
         Data Structure Algorithm Visualizer
     </header>
-    <nav class="bg-gray-800 flex justify-center text-2xl">
-        <ul class="px-10 py-9 flex space-x-9 text-white justify-end">
+    <nav class="bg-gray-900 flex justify-center text-2xl">
+        <ul class="px-10 py-6 flex space-x-9 text-white justify-end">
             <a href="index.html" class="cursor-pointern hover:font-bold subpixel-antialiased">Home</a>
             <a href="" target="_blank" class="cursor-pointern hover:font-bold subpixel-antialiased">About</a>
-            <a href="review.html" target="_blank" class="cursor-pointern hover:font-bold subpixel-antialiased">Reviews</a>
-            <a href="feedback.html" target="_blank"
+            <a href="review.html" target="_blank"
+                class="cursor-pointern hover:font-bold subpixel-antialiased">Reviews</a>
+            <a href="feedmain.html" target="_blank"
                 class="cursor-pointern hover:font-bold subpixel-antialiased">Feedback</a>
         </ul>
     </nav>
@@ -40,40 +42,44 @@
         }
 
         .dropdown-menu:hover {
-            background: #6c757d;
+            background: rgb(77, 108, 120);
         }
-
         .dropdown-menu {
             max-width: 2400px;
             margin: auto;
         }
-
         body {
-    /* Image Location */
-    background-image: url("background7.png");
- 
-    /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+            /* Image Location */
+            background-image: url("background7.png");
+            /* Background image is centered vertically and horizontally at all times*/
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
         }
-        
+        .item {
+        float: left;
+        }
+        .container {
+        float: right;
+        }
     </style>
-    <div class="dropdown show">
-        <a class="btn btn-secondary dropdown-toggle px-10 py-9 flex bg-slate-800 justify-center text-5xl text-white font-size: x-large;"
+    <div class="dropdownshow">
+        <a class="btn btn-secondary dropdown-toggle px-10 py-9 flex bg-gray-900 justify-center text-5xl text-white font-size: x-large;"
             href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">Select Data Structure</a>
-
+<div class="container">
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"
-            style="color: black; width: 2100px; text-align: center; font-size: x-large;">
-            <a class="dropdown-item">STACK</a>
-            <a class="dropdown-item" href="queue.html">QUEUE</a>
+            style="color: black; width: 2100px; text-align: center; font-size: x-large;justify-content: center; flex">
+            <a class="dropdown-item" href="stack.html">Stack</a>            <a class="dropdown-item" href="queue.html">QUEUE</a>
             <a class="dropdown-item">LINKED LIST</a>
-            <a class="dropdown-item">TREES</a>
+            <a class="dropdown-item" href="BST.html">BINARY SEARCH TREE</a>
+            <a class="dropdown-item" href="AVLtree.html">AVL TREE</a>
             <a class="dropdown-item">GRAPHS</a>
             <a class="dropdown-item" href="sorting.html">SORTING</a>
+            
         </div>
+    </div>
     </div>
     <div class="bg"></div>
 </body>

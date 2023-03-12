@@ -2,7 +2,7 @@ var HighlightCircle = function(objectID, color, radius)
 {
 	this.objectID = objectID;
 	this.radius = radius;
-	this.thickness = 4;
+	this.thickness = 5;
 	this.foregroundColor = color;
 	this.x = 0;
 	this.y = 0;

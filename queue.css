@@ -15,7 +15,7 @@ body {
 
 .VisualizationMainPage #mainContent {
 	/*padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
-	background: white;
+	background: rgb(229, 229, 229);
 }
 
 
@@ -31,7 +31,7 @@ body {
 
 .VisualizationMainPage #algoControlSection
 {
-	background: #DDEEDD; 
+	background: #ffffff; 
 	color:#000000; 
 
 }
@@ -39,7 +39,7 @@ body {
 
 .VisualizationMainPage #generalAnimationControlSection
 {
-	background:rgb(218, 236, 255); 
+	background:#DDEEDD; 
 	color:black;
 	word-spacing: 30px; 
 
@@ -91,7 +91,7 @@ body {
 .VisualizationMainPage #mainContent h1{
 	padding: 0 20px; 
 	background: white;
-	color:#006633
+	color:#001109
 }
 
 .VisualizationMainPage #mainContent h2{
@@ -107,12 +107,13 @@ body {
 }
 
 input {
-	background: white;
-	border-color: white;
+	background: rgb(255, 248, 248);
+	border-color: rgb(7, 7, 7);
 	border-style: solid;
 	border-width: 3px;
-	border-radius: 3px;
-	margin-right: 5px;
+	border-radius: 5px;
+	margin-right: 10px;
+	font-size: large;
   }
 .VisualizationMainPage #footer p {
 	margin: 0; 	padding: 10px 0; 
@@ -122,7 +123,7 @@ EM {text-decoration: bold;}
 
 .scroll-div{
 	width:550px;
-	background-image: linear-gradient(rgb(0, 0, 0), rgb(101, 101, 101));
+	background-image: linear-gradient(rgb(75, 75, 75), rgb(69, 69, 69));
 	height: 345px;
 	overflow:hidden;
 	overflow-y:scroll;
@@ -135,7 +136,6 @@ EM {text-decoration: bold;}
 
 .scroll-object{
 	color: rgb(255, 255, 255);
-	font-family:cursive;
 	font-size:20px;
 	padding:40px;
 }
@@ -147,10 +147,17 @@ h1{
 	text-align: end;
 	color:rgb(0, 0, 0);
 	font-size: x-large;
+	padding-top: 10px;
+}
+.button {
+	position: absolute;
+	bottom: 10px;
+	display: block;
+    font-weight: bold;
+    width:100%;/*Takes all available width*/
 }
 .queue{
 
-	color:rgb(255, 255, 233) ;
-	font-family: serif;
+	color:rgb(255, 255, 255) ;
 	font-size:20px
 }

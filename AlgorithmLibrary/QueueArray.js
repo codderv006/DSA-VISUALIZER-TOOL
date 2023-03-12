@@ -55,16 +55,16 @@ QueueArray.prototype.addControls =  function()
 	this.controls = [];
 	this.enqueueField = addControlToAlgorithmBar("Text", "");
 	this.enqueueField.onkeydown = this.returnSubmit(this.enqueueField,  this.enqueueCallback.bind(this), 6);
-	this.enqueueButton = addControlToAlgorithmBar("Button", "Enqueue");
+	this.enqueueButton = addControlToAlgorithmBar("Button", " Enqueue ");
 	this.enqueueButton.onclick = this.enqueueCallback.bind(this);
 	this.controls.push(this.enqueueField);
 	this.controls.push(this.enqueueButton);
 
-	this.dequeueButton = addControlToAlgorithmBar("Button", "Dequeue");
+	this.dequeueButton = addControlToAlgorithmBar("Button", " Dequeue ");
 	this.dequeueButton.onclick = this.dequeueCallback.bind(this);
 	this.controls.push(this.dequeueButton);
 	
-	this.clearButton = addControlToAlgorithmBar("Button", "Clear Queue");
+	this.clearButton = addControlToAlgorithmBar("Button", " Clear Queue ");
 	this.clearButton.onclick = this.clearCallback.bind(this);
 	this.controls.push(this.clearButton);
 	
