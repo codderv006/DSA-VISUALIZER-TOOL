@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>
+			Binary Search Tree Visualization
+		</title>
+		
+		<!-- css sheet for how the page is laid out -->
+		
+		<link rel="stylesheet" href="bst.css">
+			
+			
+		<!-- jqueury stuff.  Only used for the animation speed slider. -->
+		<link rel="stylesheet" href="ThirdParty/jquery-ui-1.8.11.custom.css">
+				
+		<script src="ThirdParty/jquery-1.5.2.min.js"></script>
+		<script src="ThirdParty/jquery-ui-1.8.11.custom.min.js"></script>
+				
+		<!-- Javascript for the actual visualization code -->
+		<script type = "application/javascript" src = "AnimationLibrary/CustomEvents.js"> </script>
+		<script type = "application/javascript" src = "AnimationLibrary/UndoFunctions.js"> </script>
+		<script type = "application/javascript" src = "AnimationLibrary/AnimatedObject.js"> </script>
+		<script type = "application/javascript" src = "AnimationLibrary/AnimatedLabel.js"> </script>
+		<script type = "application/javascript" src = "AnimationLibrary/AnimatedCircle.js"> </script>
+		<script type = "application/javascript" src = "AnimationLibrary/AnimatedRectangle.js"> </script>
+		<script type = "application/javascript" src = "AnimationLibrary/AnimatedLinkedList.js"> </script>
+		<script type = "application/javascript" src = "AnimationLibrary/HighlightCircle.js"> </script>
+		<script type = "application/javascript" src = "AnimationLibrary/Line.js"> </script>
+		<script type = "application/javascript" src = "AnimationLibrary/ObjectManager.js"> </script>
+		<script type = "application/javascript" src = "AnimationLibrary/AnimationMain.js"> </script>
+		<script type = "application/javascript" src = "AlgorithmLibrary/Algorithm.js"> </script>
+		<script type = "application/javascript" src = "AlgorithmLibrary/BST.js"> </script> 
+        <script src="https://cdn.tailwindcss.com"></script>	
+			
+	 </head> 
+	
+	<body onload="init();" class="VisualizationMainPage">
+        <div>
+			<header class="px-10 py-6 flex bg-white  justify-center text-5xl text-black">
+				Data Structure Algorithm Visualizer
+			</header>
+			<nav class="bg-gray-900 flex justify-center text-2xl">
+				<ul class="px-10 py-6 flex space-x-9 text-white justify-end">
+					<a href="index.html" class="cursor-pointern hover:font-bold subpixel-antialiased">Home</a>
+					<a href="" target="_blank" class="cursor-pointern hover:font-bold subpixel-antialiased">About</a>
+					<a href="review.html" target="_blank" class="cursor-pointern hover:font-bold subpixel-antialiased">Reviews</a>
+					<a href="feedmain.html" target="_blank"
+						class="cursor-pointern hover:font-bold subpixel-antialiased">Feedback</a>
+				</ul>
+			</nav>
+               <header class="px-10 py-6 flex bg-gray-800 justify-center text-4xl text-white">
+                Binary Search Tree
+            </header>
+        </div>
+
+		<div id = "container">
+			
+			<div id="header">  
+			</div>
+			
+			<div id = "mainContent"> 
+				
+				<div id = "algoControlSection">
+					<table id="AlgorithmSpecificControls"> </table>
+		
+				</div>
+				
+				<a href="BST questions.pdf" download>
+					<button class="button bg-blue-500 hover:bg-gray-800 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+						Practice some problems based on binary search trees here!
+					  </button>
+				</a>
+				<canvas id="canvas" width="1000" height="600"></canvas>
+				<div id = "generalAnimationControlSection">
+					<table id="GeneralAnimationControls">  </table>		
+				</div>
+				
+			</div>
+		</div>
+
+
+		<div class="scroll-bg"> 
+			<h1 class="pseudo-code">PSEUDO-CODE</h1>
+			<div class="scroll-div">
+				<div class="scroll-object">
+				<p class="queue">Insert(data) </p>   <br>  
+					<div style="text-align: left;">
+						1. START <br>
+						2. INSERT(T, n)<br>  
+						3. temp = T.root<br>  
+						4. if n.data ← temp.data <br>
+						   temp = temp.left<br>  
+						   else <br>
+						   temp = temp.right<br>
+						5. END <br><br>
+					</div>
+					
+				 <p class="queue">DELETE(node)</p><br>  
+   
+					<div style="text-align: left;">
+					1. START <br>
+					2.   if node is a leaf <br>
+							delete node <br>
+					3.	else if node has one child <br>
+							replace the node with its only child <br>
+				    4.  else <br>
+							Find the predecessor node <br>
+							Swap the values of predecessor and node <br>
+							Delete the predecessor node <br>
+							Delete the node<br>   
+					5. END    <br><br><br>
+					</div>
+					
+					
+				<p class="queue">SEARCH(x, T)</p><br>
+				<div style="text-align: left;">
+					1. START <br>
+					2.   if(T.root != null)
+							if(T.root.data == x)
+								return r<br>
+					3. else if(T.root.data > x)
+							return SEARCH(x, T.root.left) <br>
+					4. else
+							return SEARCH(x, T.root.right) <br>
+					5. End <br> <br>
+				</div>
+				</div>
+			</div>		
+		</div>
+	</body>
+</html>
